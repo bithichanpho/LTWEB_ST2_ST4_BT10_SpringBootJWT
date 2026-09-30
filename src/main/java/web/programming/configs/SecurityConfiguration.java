@@ -44,7 +44,6 @@ public class SecurityConfiguration {
 						.requestMatchers("/user/**").permitAll()
 						.requestMatchers(new AntPathRequestMatcher("/images/**")).permitAll()
 						.requestMatchers(new AntPathRequestMatcher("/js/**")).permitAll()
-						.requestMatchers(new AntPathRequestMatcher("/css/**")).permitAll()
 						.requestMatchers(new AntPathRequestMatcher("/assets/**")).permitAll()
 						.anyRequest()
 						.authenticated())
